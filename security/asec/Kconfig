@@ -1,0 +1,10 @@
+config SECURITY_ASEC
+	bool "Attouteki Seityou Security Module"
+	depends on SECURITY
+	depends on SECCOMP
+	depends on BPF
+	depends on BPF_SYSCALL
+	select SECURITY_PATH
+	default y
+	help
+		Attouteki seityou
